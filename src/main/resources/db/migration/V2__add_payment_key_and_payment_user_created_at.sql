@@ -1,0 +1,3 @@
+ALTER TABLE users ADD COLUMN payment_key VARCHAR(255);
+
+ALTER TABLE payment_user ADD COLUMN created_at TIMESTAMPTZ NOT NULL DEFAULT now();
